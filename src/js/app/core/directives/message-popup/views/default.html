@@ -1,0 +1,11 @@
+<div class="message-popup">
+    <div class="header">
+        <h3>{{data.title}}</h3>
+    </div>
+    <div class="text">
+        {{data.content}}
+    </div>
+    <div class="close" ng-if="data.close" ng-click="close()">
+        <i>X</i>
+    </div>
+</div>

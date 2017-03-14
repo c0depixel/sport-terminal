@@ -1,0 +1,32 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bild frontend kick start</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,700italic,400italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+</head>
+<body>
+
+    <!-- include: "type": "css", "files": "<%= appCss %>" -->
+    <!-- /include -->
+
+    <script src="dist/js/vendor.js"></script>
+    <script src="dist/js/libs.js"></script>
+    <script src="dist/js/app.js"></script>
+
+    <!--  Linear md loader on top of page  -->
+    <bild-custom-loader id="header-loader"></bild-custom-loader>
+
+    <div id="main" ui-view class="main-wrapper"></div>
+
+</body>
+</html>

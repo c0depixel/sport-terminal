@@ -1,0 +1,7 @@
+﻿[
+  "bower_components/normalize-css/normalize.css",
+  "dist/fonts/font-awesome/css/font-awesome.css",
+  "dist/fonts/icomoon/style.css",
+
+  "dist/css/main.css"
+]

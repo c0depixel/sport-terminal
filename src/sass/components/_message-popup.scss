@@ -1,0 +1,45 @@
+.message-popup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%)translateY(-50%));
+    background: #686868;
+    padding: 2vmax 1.5vmax;
+    z-index: 10;
+    width: 18vmax;
+    text-align: center;
+    color: #fff;
+    .header{
+        margin-bottom: 0.8vmax;
+    }
+    .close{
+        position: absolute;
+        right: 0.5vmax;
+        top: 0.5vmax;
+        display: inline-block;
+        color: #fff;
+        font-size: 1vmax;
+        font-weight: 400;
+        width: 1.9vmax;
+        height: 1.9vmax;
+        text-align: center;
+        line-height: 1.9vmax;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition(all .3s ease);
+        &:hover{
+            color: lighten(#fff, 15%);
+            border-color:  lighten(#fff, 15%);
+        }
+        i {
+            transform: scale(1, 0.8);
+            -webkit-transform: scale(1, 0.8);
+            -moz-transform: scale(1, 0.8);
+            -ms-transform: scale(1, 0.8);
+            display: block;
+            line-height: 1.9vmax;
+            -o-transform: scale(1, 0.8);
+        }
+    }
+}

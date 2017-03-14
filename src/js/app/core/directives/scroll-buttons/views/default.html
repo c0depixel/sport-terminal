@@ -1,0 +1,22 @@
+<div class="scroll-control" ng-class="{'two-buttons': !options.scrollToTop}">
+
+    <div class="left-arrow">
+        <span class="down-click" ng-click="scrollDown($event)">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <div class="go-to-top" ng-if="options.scrollToTop">
+        <span class="clear-value" ng-click="scrollClear($event)">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <span class="text">NA VRH</span>
+        </span>
+    </div>
+
+    <div class="right-arrow">
+        <span class="up-click" ng-click="scrollUp($event)">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+    </div>
+
+</div>

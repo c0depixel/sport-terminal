@@ -1,0 +1,33 @@
+{
+  "name": "sportbook-terminal",
+  "title": "sportbook-terminal",
+  "version": "0.0.1",
+  "description": "Sportbook terminal game",
+  "url": "www.bild-studio.net",
+  "copyright": "BildStudio",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "BildStudio",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-angular-templates": "*",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-include-source": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "load-grunt-tasks": "*"
+  }
+}

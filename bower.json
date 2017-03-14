@@ -1,0 +1,37 @@
+{
+  "name": "sportbook-terminal",
+  "description": "Sportbook terminal game",
+  "main": "index.js",
+  "authors": [
+    "BildStudio"
+  ],
+  "license": "BSD",
+  "keywords": [
+    "bild",
+    "hydra"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "angular-ui-router": "0.2.15",
+    "angular-filter": "^0.5.9",
+    "angular-aria": "^1.5.8",
+    "angular-ui-sortable": "^0.14.3",
+    "ngstorage": "^0.3.10",
+    "font-awesome": "fontawesome#^4.6.3",
+    "moment": "^2.16.0",
+    "keyboard": "^1.26.6",
+    "ng-virtual-keyboard": "^0.3.0"
+  }
+}

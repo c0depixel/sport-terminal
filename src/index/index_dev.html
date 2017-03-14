@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sport terminal game</title>
+
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,700italic,400italic,900,900italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+</head>
+<body>
+
+    <div id="splash-screen">
+        <div class="center">
+            <div class="spinner-wrapper">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include: "type": "css", "files": "<%= appCss %>" -->
+    <!-- /include -->
+
+    <!-- include: "type": "js", "files": "<%= concat.vendor.src %>" -->
+    <!-- /include -->
+
+    <!-- include: "type": "js", "files": "<%= concat.angularApp.src %>" -->
+    <!-- /include -->
+
+
+    <div id="main" ui-view class="main-wrapper"></div>
+
+    </body>
+</html>

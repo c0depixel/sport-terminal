@@ -1,0 +1,20 @@
+@-webkit-keyframes blink {
+    from { color: #fff; }
+    to { color: $primary-color; }
+}
+@-moz-keyframes blink {
+    from { color: #fff; }
+    to { color: $primary-color; }
+}
+@-ms-keyframes blink {
+    from { color: #fff; }
+    to { color: $primary-color; }
+}
+@-o-keyframes blink {
+    from { color: #fff; }
+    to { color: $primary-color; }
+}
+@keyframes blink {
+    from { color: #fff; }
+    to { color: $primary-color; }
+}

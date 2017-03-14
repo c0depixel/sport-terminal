@@ -1,0 +1,38 @@
+<ul class="markets-horizontal">
+    <li ng-repeat="market in match.markets  | limitTo : 3" ng-class="{locked: market.disabled}">
+        <div class="market-name">
+            {{market.marketName}}
+        </div>
+        <div class="market-game">
+            <div class="fix" ng-repeat="fix in market.quotes[0] track by $index" ng-class="{separator: fix.special}">
+                <div class="wrap-fix" ng-click="content.betMarket(fix.eventId, fix.quotaId)" ng-if="!fix.special" ng-class="{locked: fix.disabled}">
+                    <div class="text">
+                        {{fix.title_translated}}
+                    </div>
+                    <div class="quota">
+                        {{fix.value}}
+                    </div>
+                </div>
+                <div class="wrap-separator" ng-if="fix.special">
+                    <div class="text">
+                        {{fix.value}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="blank">
+        <div class="market-name">
+            &nbsp;
+        </div>
+        <div class="market-game">
+            <div class="fix">
+                <div class="wrap-fix" ng-click="content.openEvent(match.eventId)">
+                    <div class="quota">
+                        Sve
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

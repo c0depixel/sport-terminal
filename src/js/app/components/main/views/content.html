@@ -1,0 +1,67 @@
+<div class="wrap">
+
+    <!--here goes ng-repeat of available days-->
+    <div class="days-list">
+        <ul>
+            <li ng-repeat="day in content.daysList track by day.id" ng-class="{active: content.activeDayId === day.id}">
+                <a ng-click="content.setDay(day.id)">{{day.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--here goes ng-repeat of list of sports -->
+    <div class="sports-list">
+        <ul>
+            <li ng-repeat="sport in content.sports track by sport.id" ng-class="{active: content.activeSportId === sport.id}">
+                <a ng-click="content.setSport(sport.id, true)">
+                    <span class="icon">
+                        <i class="f-sansa {{sport.icon}}" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">{{sport.title}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="matches-content" ng-class="{'opened-match': $root.showMarkets}">
+
+        <div class="matches-list" id="matches-list">
+            <div class="wrap-scroll">
+                <ul class="group-accordion">
+                    <li class="group" ng-repeat="leagues in content.activeSport track by leagues.tournamentId" data-acc-id="{{leagues.tournamentId}}">
+                        <div class="group-header" ng-click="content.openGroup(leagues.tournamentId)">
+                            <span class="icon">
+                                <i class="f-sansa {{leagues.tournamentIcon}}" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">
+                                {{leagues.tournamentName}}
+                            </span>
+                        </div>
+                        <div class="group-content">
+                            <div class="match" ng-repeat="match in leagues.events track by match.eventId" ng-class="{'active': $root.currentEvent == match.eventId}">
+                                <div match-details ng-click="content.openEvent(match.eventId)" ng-class="content.live ? 'live' : 'prelive'"></div>
+
+                                <div horizontal-markets class="match-long" ng-hide="$root.showMarkets"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--here goes ui-view state event for open game content-->
+        <div class="open-match" id="open-match">
+            <div ui-view="event" class="wrap-scroll"></div>
+        </div>
+
+    </div>
+
+
+    <!--here goes scroll buttons (directives) for layout behaviour-->
+    <div class="scroll-content" ng-class="{'opened-match': $root.showMarkets}">
+        <div scroll-buttons scroll-buttons-options="content.scrollMatchesOptions" class="matches-scroll"></div>
+        <div scroll-buttons scroll-buttons-options="content.scrollOpenMatchOptions" class="open-match-scroll"></div>
+    </div>
+
+</div>

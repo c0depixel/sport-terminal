@@ -1,0 +1,213 @@
+.matches-list{
+    overflow: hidden;
+    height: 100%;
+    .group-accordion{
+        padding: 0.85vmax 0;
+        .group{
+            .group-header{
+                background: rgba(#000, 0.5);
+                border: 1px solid $border3;
+                padding: 1vmax 3vmax 1vmax 3.5vmax;
+                position: relative;
+                cursor: pointer;
+                margin-bottom: -1px;
+                color: #fff;
+                @include transition(all .3s ease);
+                .icon{
+                    position: absolute;
+                    left: 0;
+                    width: 3.5vmax;
+                    top: 50%;
+                    text-align: center;
+                    @include transform(translateY(-50%));
+                    font-size: 1.6vmax;
+                }
+                .text{
+                    font-size: 0.85vmax;
+                    font-weight: 400;
+                    @include ellipsis();
+                }
+                &:after{
+                    font-family: FontAwesome;
+                    content: "\f107";
+                    position: absolute;
+                    top: 50%;
+                    right: 1vmax;
+                    font-size: 1.5vmax;
+                    color: #fff;
+                    z-index: 2;
+                    @include transform(translateY(-50%));
+                    @include transition(all .4s ease-in-out);
+                }
+            }
+            .group-content{
+                display: none;
+                padding-top: 0.25vmax;
+            }
+            &.opened{
+                .group-header{
+                    color: $primary-color;
+                }
+                .group-header{
+                    &:after{
+                        @include transform(translateY(-50%) rotate(180deg));
+                    }
+                }
+            }
+        }
+        .match {
+            margin-bottom: 0.25vmax;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            &.active{
+                .match-short{
+                    background: $primary-color;
+                    border-color: $primary-color;
+                    .match-details{
+                        .league, .other{
+                            color: darken($primary-color, 15%);
+                        }
+                        .teams{
+                            color: #fff;
+                        }
+                        .teams span .service {
+                            background: darken($primary-color, 15%);
+                        }
+                    }
+                }
+            }
+            .match-short{
+                padding: 0.75vmax 1.5vmax 0.75vmax 0.75vmax;
+                background: $bg3;
+                border: 1px solid $border3;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                cursor: pointer;
+                @include transition(all .3s ease);
+                flex-grow: 1;
+                flex-basis: 26%;
+                flex-shrink: 0;
+                &:hover{
+                    background: $primary-color;
+                    border-color: $primary-color;
+                    .match-details{
+                        .league, .other{
+                            color: darken($primary-color, 15%);
+                        }
+                        .teams{
+                            color: #fff;
+                        }
+                        .teams span .service {
+                            background: darken($primary-color, 15%);
+                        }
+                    }
+                }
+                .time{
+                    color: white;
+                    font-size: 0.85vmax;
+                    font-weight: 700;
+                    line-height: 1vmax;
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    max-width: 100%;
+                }
+                .match-details{
+                    flex: 0 0 72%;
+                    max-width: 72%;
+                    .league{
+                        color: #d2d2d2;
+                        font-size: 0.75vmax;
+                        font-weight: 400;
+                        @include transition(all .3s ease);
+                        span{
+                            @include ellipsis();
+                            display: block;
+                        }
+                    }
+                    .teams{
+                        padding: 0.25vmax 0;
+                        color: $primary-color;
+                        @include transition(all .3s ease);
+                        span{
+                            font-size: 0.9vmax;
+                            font-weight: 400;
+                            @include ellipsis();
+                            position: relative;
+                            padding-right: 0.8vmax;
+                            line-height: 1vmax;
+                            .service{
+                                position: absolute;
+                                right: 1%;
+                                border-radius: 50%;
+                                width: 0.5vmax;
+                                height: 0.5vmax;
+                                top: 30%;
+                                background: $primary-color;
+                            }
+                        }
+                    }
+                    .other{
+                        color: #d2d2d2;
+                        font-size: 0.75vmax;
+                        font-weight: 400;
+                        @include transition(all .3s ease);
+                    }
+                }
+                .results{
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    max-width: 100%;
+                    text-align: right;
+                    > div{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        align-content: flex-end;
+                        justify-content: flex-end;
+                    }
+                    .score{
+                        color: white;
+                        font-size: 0.95vmax;
+                        font-weight: 700;
+                        line-height: 1.2vmax;
+                        margin-left: 0.3vmax;
+                        flex-shrink: 0;
+                    }
+                    .cards{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        flex-shrink: 0;
+
+                        i{
+                            width: 0.5vmax;
+                            height: 0.75vmax;
+                            display: block;
+                            margin-left: 2px;
+                            &.y{
+                                background: #ffd200;
+                            }
+                            &.r{
+                                background: #ff2b35;
+                            }
+                        }
+                    }
+                    .team-home{
+                        position: relative;
+                    }
+                    .team-away{
+                        position: relative;
+                    }
+                }
+            }
+            .match-long{
+                flex-basis: 74%;
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}

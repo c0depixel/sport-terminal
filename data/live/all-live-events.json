@@ -1,0 +1,1159 @@
+{
+  "quickmenu": "",
+  "breadcrumb": "",
+  "pagemenu": "",
+  "content": {
+    "leagues": [
+      {
+        "id": "1",
+        "name": "Brescia, Italy"
+      },
+      {
+        "id": "tournamentId plje unutar single events",
+        "name": "Ruska Federacija"
+      }
+    ],
+    "events": [
+      {
+        "eventId": "9873833",
+        "type": "live",
+        "sport": "soccer",
+        "sportName": "Fudbal",
+        "sportIcon": "",
+        "broadcastUrl": "",
+        "video": null,
+        "field": "https:\/\/manager.sansabet.com\/widget-manager\/betradar-field\/match\/8738338",
+        "disabled": false,
+        "inFavorites": false,
+        "ref": "",
+        "heading": {
+          "time": "59\u0027",
+          "timeTitle": "",
+          "startDate": "",
+          "startTime": "",
+          "status": "1",
+          "match_status": "2p",
+          "bet_status": "started",
+          "homeName": "Duzyurtspor",
+          "awayName": "Muglaspor",
+          "flag_home": "",
+          "flag_away": "",
+          "categoryId": "",
+          "categoryName": "Turska, \u0410materi",
+          "tournamentId": "",
+          "tournamentName": "3. liga, Skupina 3",
+          "competition": "Turska, \u0410materi\/3. liga, Skupina 3",
+          "categoryType": "",
+          "card_home": [
+            "yellow"
+          ],
+          "card_away": [
+            "yellow",
+            "yellow"
+          ],
+          "scored_home": false,
+          "scored_away": false,
+          "service_home": false,
+          "service_away": false,
+          "score_heading": [
+            {
+              "style": "partial",
+              "value": "1\/2",
+              "status": "1p"
+            },
+            {
+              "style": "partial highlight",
+              "value": "2\/2",
+              "status": "2p"
+            },
+            {
+              "style": "regular",
+              "value": "REG",
+              "status": ""
+            }
+          ],
+          "score_home": [
+            {
+              "style": "partial",
+              "value": "1",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "partial highlight",
+              "value": "2",
+              "status": "2p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "3",
+              "status": "",
+              "changed": false
+            }
+          ],
+          "score_away": [
+            {
+              "style": "partial",
+              "value": "0",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "partial highlight",
+              "value": "0",
+              "status": "2p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "0",
+              "status": "",
+              "changed": false
+            }
+          ]
+        },
+        "marketsNav": {
+          "selected": 0,
+          "items": [
+            {
+              "title": "Osnovne Igre",
+              "url": "\/web\/live\/event\/9873833\/mobile-basic",
+              "name": "mobile-basic",
+              "key": "mobile-basic",
+              "icon": ""
+            },
+            {
+              "title": "Sve Igre",
+              "url": "\/web\/live\/event\/9873833\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-all",
+              "icon": ""
+            },
+            {
+              "title": "Omiljene igre",
+              "url": "\/web\/live\/event\/9873833\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-favorite",
+              "icon": ""
+            }
+          ]
+        },
+        "markets": [
+          {
+            "marketId": "1",
+            "marketName": "Kona\u010dan ishod (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": false,
+                  "eventId": "9873833",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": " ",
+                  "state": "none",
+                  "disabled": true,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": false,
+                  "eventId": "9873833",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "11.00",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": false,
+                  "eventId": "9873833",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "70.00",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "2",
+            "marketName": "Ukupno +\/- (Reg. vrijeme)",
+            "style": "overall",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "3.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.45",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "3.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "3.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.55",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "4.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.00",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "4.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "4.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.30",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "5.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "6.75",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "5.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "5.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "5.5",
+                  "eventId": "9873833",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.06",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "7",
+            "marketName": "Ostatak me\u010da (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": "3:0",
+                  "eventId": "9873833",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.45",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": "3:0",
+                  "eventId": "9873833",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.05",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": "3:0",
+                  "eventId": "9873833",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.75",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          }
+        ],
+        "numberOfMarkets": "Sve",
+        "eventUrl": "\/live\/event\/9873833"
+      },
+      {
+        "eventId": "9873839",
+        "type": "live",
+        "sport": "soccer",
+        "sportName": "Fudbal",
+        "sportIcon": "",
+        "broadcastUrl": "",
+        "video": null,
+        "field": "https:\/\/manager.sansabet.com\/widget-manager\/betradar-field\/match\/9873839",
+        "disabled": false,
+        "inFavorites": false,
+        "ref": "",
+        "heading": {
+          "time": "45\u0027 +1",
+          "timeTitle": "",
+          "startDate": "",
+          "startTime": "",
+          "status": "1",
+          "match_status": "1p",
+          "bet_status": "started",
+          "homeName": "Ankara Adliyespor",
+          "awayName": "Elaziz Belediyespor",
+          "flag_home": "",
+          "flag_away": "",
+          "categoryId": "",
+          "categoryName": "Turska, \u0410materi",
+          "tournamentId": "",
+          "tournamentName": "3. liga, Skupina 3",
+          "competition": "Turska, \u0410materi\/3. liga, Skupina 3",
+          "categoryType": "",
+          "card_home": [],
+          "card_away": [
+            "yellow",
+            "yellow"
+          ],
+          "scored_home": false,
+          "scored_away": false,
+          "service_home": false,
+          "service_away": false,
+          "score_heading": [
+            {
+              "style": "partial highlight",
+              "value": "1\/2",
+              "status": "1p"
+            },
+            {
+              "style": "regular",
+              "value": "REG",
+              "status": ""
+            }
+          ],
+          "score_home": [
+            {
+              "style": "partial highlight",
+              "value": "1",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "1",
+              "status": "",
+              "changed": false
+            }
+          ],
+          "score_away": [
+            {
+              "style": "partial highlight",
+              "value": "0",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "0",
+              "status": "",
+              "changed": false
+            }
+          ]
+        },
+        "marketsNav": {
+          "selected": 0,
+          "items": [
+            {
+              "title": "Osnovne Igre",
+              "url": "\/web\/live\/event\/9873839\/mobile-basic",
+              "name": "mobile-basic",
+              "key": "mobile-basic",
+              "icon": ""
+            },
+            {
+              "title": "Sve Igre",
+              "url": "\/web\/live\/event\/9873839\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-all",
+              "icon": ""
+            },
+            {
+              "title": "Omiljene igre",
+              "url": "\/web\/live\/event\/9873839\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-favorite",
+              "icon": ""
+            }
+          ]
+        },
+        "markets": [
+          {
+            "marketId": "1",
+            "marketName": "Kona\u010dan ishod (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": false,
+                  "eventId": "9873839",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.35",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": false,
+                  "eventId": "9873839",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.05",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": false,
+                  "eventId": "9873839",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "9.50",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "2",
+            "marketName": "Ukupno +\/- (Reg. vrijeme)",
+            "style": "overall",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "1.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.30",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "1.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "1.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.20",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "2.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.35",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "2.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "2.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.50",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "3.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "5.25",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "3.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "3.5",
+                  "eventId": "9873839",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.12",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "7",
+            "marketName": "Ostatak me\u010da (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": "1:0",
+                  "eventId": "9873839",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.10",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": "1:0",
+                  "eventId": "9873839",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.30",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": "1:0",
+                  "eventId": "9873839",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.85",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          }
+        ],
+        "numberOfMarkets": "Sve",
+        "eventUrl": "\/live\/event\/9873839"
+      },
+      {
+        "eventId": "9873845",
+        "type": "live",
+        "sport": "soccer",
+        "sportName": "Fudbal",
+        "sportIcon": "",
+        "broadcastUrl": "",
+        "video": "https:\/\/manager.sansabet.com\/widget-manager\/liveperform-video\/match\/8738450",
+        "field": "https:\/\/manager.sansabet.com\/widget-manager\/betradar-field\/match\/8738450",
+        "disabled": false,
+        "inFavorites": false,
+        "ref": "",
+        "heading": {
+          "time": "45\u0027 +1",
+          "timeTitle": "",
+          "startDate": "",
+          "startTime": "",
+          "status": "1",
+          "match_status": "1p",
+          "bet_status": "started",
+          "homeName": "Sultanbeyli Belediyespor",
+          "awayName": "Bayrampasa",
+          "flag_home": "",
+          "flag_away": "",
+          "categoryId": "",
+          "categoryName": "Turska, \u0410materi",
+          "tournamentId": "",
+          "tournamentName": "3. liga, Skupina 3",
+          "competition": "Turska, \u0410materi\/3. liga, Skupina 3",
+          "categoryType": "",
+          "card_home": [
+            "yellow"
+          ],
+          "card_away": [
+            "yellow"
+          ],
+          "scored_home": false,
+          "scored_away": false,
+          "service_home": false,
+          "service_away": false,
+          "score_heading": [
+            {
+              "style": "partial highlight",
+              "value": "1\/2",
+              "status": "1p"
+            },
+            {
+              "style": "regular",
+              "value": "REG",
+              "status": ""
+            }
+          ],
+          "score_home": [
+            {
+              "style": "partial highlight",
+              "value": "0",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "0",
+              "status": "",
+              "changed": false
+            }
+          ],
+          "score_away": [
+            {
+              "style": "partial highlight",
+              "value": "0",
+              "status": "1p",
+              "changed": false
+            },
+            {
+              "style": "regular",
+              "value": "0",
+              "status": "",
+              "changed": false
+            }
+          ]
+        },
+        "marketsNav": {
+          "selected": 0,
+          "items": [
+            {
+              "title": "Osnovne Igre",
+              "url": "\/web\/live\/event\/9873845\/mobile-basic",
+              "name": "mobile-basic",
+              "key": "mobile-basic",
+              "icon": ""
+            },
+            {
+              "title": "Sve Igre",
+              "url": "\/web\/live\/event\/9873845\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-all",
+              "icon": ""
+            },
+            {
+              "title": "Omiljene igre",
+              "url": "\/web\/live\/event\/9873845\/mobile-all",
+              "name": "mobile-all",
+              "key": "mobile-favorite",
+              "icon": ""
+            }
+          ]
+        },
+        "markets": [
+          {
+            "marketId": "1",
+            "marketName": "Kona\u010dan ishod (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": false,
+                  "eventId": "9873845",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.20",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": false,
+                  "eventId": "9873845",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.45",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": false,
+                  "eventId": "9873845",
+                  "marketId": "1",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.55",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "2",
+            "marketName": "Ukupno +\/- (Reg. vrijeme)",
+            "style": "overall",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "0.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.25",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "0.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "0.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "0.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "3.40",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "1.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.20",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "1.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "1.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.60",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ],
+              [
+                {
+                  "quotaId": "over",
+                  "title": "over",
+                  "title_translated": "Vi\u0161e",
+                  "border": "2.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.75",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "specialvalue",
+                  "title": "specialvalue",
+                  "title_translated": "specialvalue",
+                  "border": "2.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.5",
+                  "state": "none",
+                  "disabled": false,
+                  "special": true
+                },
+                {
+                  "quotaId": "under",
+                  "title": "under",
+                  "title_translated": "Manje",
+                  "border": "2.5",
+                  "eventId": "9873845",
+                  "marketId": "2",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "1.15",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          },
+          {
+            "marketId": "7",
+            "marketName": "Ostatak me\u010da (Reg. vrijeme)",
+            "style": "regular",
+            "disabled": false,
+            "changed": true,
+            "active": "1",
+            "open": false,
+            "show": true,
+            "favoriteId": null,
+            "inFavorites": false,
+            "quotes": [
+              [
+                {
+                  "quotaId": "1",
+                  "title": "1",
+                  "title_translated": "1",
+                  "border": "0:0",
+                  "eventId": "9873845",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.20",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "x",
+                  "title": "x",
+                  "title_translated": "x",
+                  "border": "0:0",
+                  "eventId": "9873845",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "2.45",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                },
+                {
+                  "quotaId": "2",
+                  "title": "2",
+                  "title_translated": "2",
+                  "border": "0:0",
+                  "eventId": "9873845",
+                  "marketId": "7",
+                  "isLive": true,
+                  "inTicket": false,
+                  "value": "4.55",
+                  "state": "none",
+                  "disabled": false,
+                  "special": false
+                }
+              ]
+            ]
+          }
+        ],
+        "numberOfMarkets": "Sve",
+        "eventUrl": "\/live\/event\/9873845"
+      }
+    ]
+  },
+  "messages": ""
+}

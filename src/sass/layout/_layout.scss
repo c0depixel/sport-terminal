@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     not supported by any browser */
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    @include transition(all .3s ease);
+    color: $primary-color;
+    &:hover {
+        color: lighten($primary-color, 5%);
+    }
+}
+
+i {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    align-items: stretch;
+}
+
+.content {
+    padding: 0.8vmax;
+    flex: 0 0 70%;
+    max-width: 70%;
+    height: 100%;
+}
+
+.right-content {
+    padding: 0.8vmax;
+    flex: 0 0 30%;
+    max-width: 30%;
+    height: 100%;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.matches-content {
+    flex-grow: 1;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    .matches-list {
+        flex-basis: 26%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+    .open-match {
+        display: none;
+        flex-grow: 1;
+        overflow: hidden;
+        height: 100%;
+        .wrap-scroll {
+            flex-grow: 1;
+        }
+    }
+    &.opened-match {
+        .matches-list {
+            margin-right: 0.8vmax;
+            flex-grow: 0;
+        }
+        .open-match {
+            display: block;
+        }
+    }
+}
+
+.scroll-content {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    .matches-scroll {
+        flex-basis: 26%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+    .open-match-scroll {
+        display: none;
+        flex-grow: 1;
+    }
+    &.opened-match {
+        .matches-scroll {
+            flex-grow: 0;
+            margin-right: 0.8vmax;
+        }
+        .open-match-scroll {
+            display: flex;
+        }
+    }
+}
+
+body.popup-open {
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        background: #000000;
+        opacity: 0.6;
+        display: none;
+    }
+    &:after {
+        display: block;
+    }
+}

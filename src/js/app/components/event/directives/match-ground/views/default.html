@@ -1,0 +1,9 @@
+<div class="match-ground">
+
+    <div class="bg" ng-bind-html="background()"></div>
+
+    <div class="match-details {{event.sportType}}" id="match-details" ng-class="{'live' : event.bettingType === 'live', 'prelive' : event.bettingType === 'prelive'}"></div>
+
+    <div go-back></div>
+
+</div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sport terminal game</title>
+
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,700italic,400italic,900,900italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+</head>
+<body>
+
+    <div id="splash-screen">
+        <div class="center">
+            <div class="spinner-wrapper">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include: "type": "css", "files": "<%= appCss %>" -->
+    <link href="dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="dist/fonts/icomoon/style.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css">
+    <!-- /include -->
+
+    <!-- include: "type": "js", "files": "<%= concat.vendor.src %>" -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/keyboard/dist/js/jquery.keyboard.js"></script>
+    <script src="bower_components/ng-virtual-keyboard/dist/ng-virtual-keyboard.min.js"></script>
+    <!-- /include -->
+
+    <!-- include: "type": "js", "files": "<%= concat.angularApp.src %>" -->
+    <script src="src/js/app/app.js"></script>
+    <script src="src/js/app/templates.js"></script>
+    <script src="src/js/app/core/core.module.js"></script>
+    <script src="src/js/app/core/layout/layout.module.js"></script>
+    <script src="src/js/app/core/services/config.service.js"></script>
+    <script src="src/js/app/core/services/hydra.service.js"></script>
+    <script src="src/js/app/core/services/utility.service.js"></script>
+    <script src="src/js/app/core/directives/go-back/go-back.directive.js"></script>
+    <script src="src/js/app/core/directives/message-popup/message-popup.directive.js"></script>
+    <script src="src/js/app/core/directives/scroll-buttons/scroll-buttons.directive.js"></script>
+    <script src="src/js/app/core/layout/layout.controller.js"></script>
+    <script src="src/js/app/components/components.module.js"></script>
+    <script src="src/js/app/components/event/event.module.js"></script>
+    <script src="src/js/app/components/main/main.module.js"></script>
+    <script src="src/js/app/components/event/directives/markets/markets.directive.js"></script>
+    <script src="src/js/app/components/event/directives/match-ground/match-ground.directive.js"></script>
+    <script src="src/js/app/components/main/directives/horizontal-markets/horizontal-martkets.directive.js"></script>
+    <script src="src/js/app/components/main/directives/match-details/match-details.directive.js"></script>
+    <script src="src/js/app/components/event/controllers/event.controller.js"></script>
+    <script src="src/js/app/components/main/controllers/content.controller.js"></script>
+    <script src="src/js/app/components/main/controllers/right.controller.js"></script>
+    <!-- /include -->
+
+
+    <div id="main" ui-view class="main-wrapper"></div>
+
+    </body>
+</html>

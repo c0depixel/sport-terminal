@@ -1,0 +1,48 @@
+<div class="match-short">
+    <div class="time" ng-if="content.live">
+        <span>{{match.heading.time}}</span>
+    </div>
+    <div class="match-details">
+        <div class="league">
+         <span>
+             {{match.heading.competition}}
+         </span>
+        </div>
+        <div class="teams">
+            <span class="team-home">{{match.heading.homeName}} <i ng-if="match.heading.service_home"
+                                                                  class="service"></i></span>
+            <br>
+            <span class="team-away">{{match.heading.awayName}} <i ng-if="match.heading.service_away"
+                                                                  class="service"></i></span>
+        </div>
+        <div class="other" ng-if="content.live">
+            <span ng-repeat="score in match.heading.score_home track by $index" ng-hide="$last">
+                <span class="{{score.style}}">{{score.value}}</span>-<span
+                class="{{match.heading.score_away[$index].style}}">{{match.heading.score_away[$index].value}}</span>&nbsp;
+            </span>
+        </div>
+        <div class="other" ng-if="!content.live">
+            {{match.heading.startTime}}&nbsp;&nbsp;{{match.heading.startDate}}
+        </div>
+    </div>
+    <div class="results" ng-if="content.live">
+        <div class="team-home">
+                        <span class="cards">
+                <i ng-repeat="(key, value) in match.heading.card_home track by $index"
+                   ng-class="{y: value === 'yellow', r: value === 'red'}"></i>
+                </span>
+            <span class="score">
+            {{match.heading.score_home[match.heading.score_home.length - 1].value}}
+         </span>
+        </div>
+        <div class="team-away">
+                        <span class="cards">
+                <i ng-repeat="(key, value) in match.heading.card_away track by $index"
+                   ng-class="{y: value === 'yellow', r: value === 'red'}"></i>
+            </span>
+            <span class="score">
+            {{match.heading.score_away[match.heading.score_away.length - 1].value}}
+         </span>
+        </div>
+    </div>
+</div>

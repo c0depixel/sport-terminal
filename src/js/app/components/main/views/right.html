@@ -1,0 +1,205 @@
+<div class="wrap">
+    <!--here goes 3 types of ticket (tabs layout)-->
+    <ul class="ticket-type">
+        <li class="active">
+            <a>Singl</a>
+        </li>
+        <li>
+            <a>Kombinovani</a>
+        </li>
+        <li>
+            <a>Sistem</a>
+        </li>
+    </ul>
+    <div class="ticket-content">
+        <div class="ticket-wrap">
+            <!--here goes ng-repeat of played games for ticket payment -->
+            <div class="ticket-matches-list" id="ticket-matches-list">
+                <ul class="wrap-scroll">
+                    <li>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span class="team-home">Manchester Utd</span>
+                                <span class="separator">-</span>
+                                <span class="team-away">Manchester City</span>
+                                <div class="live">
+                                    Uživo
+                                </div>
+                            </div>
+                            <div class="fix">
+                                <div class="title">
+                                    Konačan ishod
+                                </div>
+                                <div class="value">
+                                    Neriješeno
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <div class="remove">
+                                <i>X</i>
+                            </div>
+                            <div class="quota up">
+                                1.85
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span class="team-home">Manchester Utd</span>
+                                <span class="separator">-</span>
+                                <span class="team-away">Manchester City</span>
+                                <div class="live">
+                                    Uživo
+                                </div>
+                            </div>
+                            <div class="fix">
+                                <div class="title">
+                                    Konačan ishod
+                                </div>
+                                <div class="value">
+                                    Neriješeno
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <div class="remove">
+                                <i>X</i>
+                            </div>
+                            <div class="quota up">
+                                1.85
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span class="team-home">Manchester Utd</span>
+                                <span class="separator">-</span>
+                                <span class="team-away">Manchester City</span>
+                                <div class="live">
+                                    Uživo
+                                </div>
+                            </div>
+                            <div class="fix">
+                                <div class="title">
+                                    Konačan ishod
+                                </div>
+                                <div class="value">
+                                    Neriješeno
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <div class="remove">
+                                <i>X</i>
+                            </div>
+                            <div class="quota up">
+                                1.85
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span class="team-home">Manchester Utd</span>
+                                <span class="separator">-</span>
+                                <span class="team-away">Manchester City</span>
+                                <div class="live">
+                                    Uživo
+                                </div>
+                            </div>
+                            <div class="fix">
+                                <div class="title">
+                                    Konačan ishod
+                                </div>
+                                <div class="value">
+                                    Neriješeno
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <div class="remove">
+                                <i>X</i>
+                            </div>
+                            <div class="quota down">
+                                1.85
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span class="team-home">Manchester Utd</span>
+                                <span class="separator">-</span>
+                                <span class="team-away">Manchester City</span>
+                                <div class="live">
+                                    Uživo
+                                </div>
+                            </div>
+                            <div class="fix">
+                                <div class="title">
+                                    Konačan ishod
+                                </div>
+                                <div class="value">
+                                    Neriješeno
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-actions">
+                            <div class="remove">
+                                <i>X</i>
+                            </div>
+                            <div class="quota down">
+                                1.85
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--here goes scroll buttons (directive) for layout behaviour-->
+            <div scroll-buttons scroll-buttons-options="right.scrollTicketsOptions"></div>
+
+            <!--here goes ticket payment form -->
+            <div class="ticket-payment">
+                <div class="wrap-input">
+                    <div class="title">
+                        <span>Ulog</span>
+                    </div>
+                    <div class="input">
+                        <ul class="default-amounts">
+                            <li ng-repeat="amount in right.defaultAmounts">
+                                <span ng-click="right.setAmount(amount.val)">{{amount.name}}</span>
+                            </li>
+                        </ul>
+                        <div class="input-right">
+                            <input ng-virtual-keyboard="right.numericKeyboardOptions" placeholder="00.00€" ng-model="right.amount" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <ul>
+                        <li>
+                            <span class="title">Ukupno igara</span>
+                            <span class="value">3</span>
+                        </li>
+                        <li>
+                            <span class="title">Ukupan ulog</span>
+                            <span class="value">12.00€</span>
+                        </li>
+                        <li>
+                            <span class="title">Ukupan potencijalni dobitak</span>
+                            <span class="value">43.50-393.50€</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment-actions">
+                    <button type="button" ng-click="right.clearAmount()" class="clear">Izbriši</button>
+                    <button type="button" ng-click="right.payment()" class="pay">Uplati tiket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

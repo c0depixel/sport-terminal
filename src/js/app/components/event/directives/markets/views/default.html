@@ -1,0 +1,42 @@
+<div class="markets">
+    <div class="markets-filter">
+        <ul>
+            <li ng-repeat="filter in event.filters track by filter.filterId">
+                <div class="wrap-filter" ng-click="filterToggle(filter.filterId)">
+                    <div class="icon">
+                        <i class="fa" ng-class="{'fa-check-circle-o': selectedFilters.indexOf(filter.filterId) !== -1, 'fa-circle-o': selectedFilters.indexOf(filter.filterId) === -1}" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        {{filter.filterName}}
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <ul class="markets-vertical" ng-class="{'empty': selectedFilters.length === 0}">
+        <li ng-repeat="market in event.markets | filter: filterMarkets track by market.marketId" ng-class="{locked: market.disabled}">
+            <div class="market-name">
+                {{market.marketName}}
+            </div>
+            <div class="market-game">
+                <div class="market-row" ng-repeat="row in market.quotes track by $index">
+                    <div class="fix" ng-repeat="fix in row track by fix.quotaId" ng-class="{separator: fix.special}">
+                        <div class="wrap-fix" ng-click="content.betMarket(fix.eventId, fix.quotaId)" ng-if="!fix.special" ng-class="{locked: fix.disabled}">
+                            <div class="text">
+                                {{fix.title_translated}}
+                            </div>
+                            <div class="quota">
+                                {{fix.value}}
+                            </div>
+                        </div>
+                        <div class="wrap-separator" ng-if="fix.special">
+                            <div class="text">
+                                {{fix.value}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

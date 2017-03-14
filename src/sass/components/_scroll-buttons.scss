@@ -1,0 +1,68 @@
+.scroll-control{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:  stretch;
+    border: 1px solid #7d7d7d;
+    flex-shrink: 0;
+    text-align: center;
+    &.two-buttons{
+        .left-arrow{
+            border-right: 1px solid #7d7d7d;
+        }
+    }
+    .left-arrow{
+        flex-basis: 0;
+        flex-grow: 1;
+        color: #fff;
+        .down-click{
+            background: #383838;
+            display: block;
+            font-size: 2.2vmax;
+            cursor: pointer;
+            @include transition(all .3s ease);
+            &:hover{
+                background: lighten(#383838, 5%);
+            }
+        }
+    }
+    .go-to-top{
+        flex: 0 0 20%;
+        max-width: 20%;
+        background: #484848;
+        .clear-value{
+            background: #484848;
+            color: #bbb;
+            cursor: pointer;
+            @include transition(all .3s ease);
+            &:hover{
+                background: lighten(#484848, 5%);
+            }
+            i{
+                display: block;
+                font-size: 2.2vmax;
+                line-height: 1.6vmax;
+            }
+            .text{
+                display: block;
+                font-size: 0.7vmax;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .right-arrow{
+        flex-basis: 0;
+        flex-grow: 1;
+        color: #fff;
+        .up-click{
+            background: #383838;
+            display: block;
+            font-size: 2.2vmax;
+            cursor: pointer;
+            @include transition(all .3s ease);
+            &:hover{
+                background: lighten(#383838, 5%);
+            }
+        }
+    }
+}

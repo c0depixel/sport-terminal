@@ -1,0 +1,67 @@
+<div class="left">
+    <div class="breadcrumbs">
+        <ul>
+            <li>
+                <a>{{event.sportName}}</a>
+            </li>
+            <li>
+                <a>{{event.heading.categoryName}}</a>
+            </li>
+            <li>
+                <a>{{event.heading.tournamentName}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <div class="time" ng-if="event.heading.time">
+            <span>{{event.heading.time}}</span>
+        </div>
+        <div class="teams">
+            <span class="team-home">{{event.heading.homeName}} <i ng-if="event.heading.service_home" class="service"></i></span>
+            <br>
+            <span class="team-away">{{event.heading.awayName}} <i ng-if="event.heading.service_away" class="service"></i></span>
+        </div>
+        <div class="results">
+            <div class="team-home">
+                <span class="score">
+                    {{event.heading.score_home[event.heading.score_home.length - 1].value}}
+                </span>
+                <span class="cards">
+                    <i ng-repeat="(key, value) in event.heading.card_home track by $index" ng-class="{y: value === 'yellow', r: value === 'red'}"></i>
+                </span>
+            </div>
+            <div class="team-away">
+                <span class="score">
+                    {{event.heading.score_away[event.heading.score_away.length - 1].value}}
+                </span>
+                <span class="cards">
+                    <i ng-repeat="(key, value) in event.heading.card_away track by $index" ng-class="{y: value === 'yellow', r: value === 'red'}"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <table class="score">
+        <thead>
+            <tr>
+                <th ng-repeat="value in event.heading.score_heading track by $index" class="{{value.style}}" ng-class="{'changed': value.changed}">
+                    {{value.value}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td ng-repeat="value in event.heading.score_home track by $index" class="{{value.style}}" ng-class="{'changed': value.changed}">
+                    {{value.value}}
+                </td>
+            </tr>
+        <tr>
+            <td ng-repeat="value in event.heading.score_away track by $index" class="{{value.style}}" ng-class="{'changed': value.changed}">
+                {{value.value}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+

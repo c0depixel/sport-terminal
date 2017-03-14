@@ -1,0 +1,29 @@
+﻿[
+
+  "src/js/app/app.js",
+  "src/js/app/templates.js",
+
+  "src/js/app/core/**/*.module.js",
+  "src/js/app/core/**/*.service.js",
+  "src/js/app/core/**/*.directive.js",
+  "src/js/app/core/**/*.config.js",
+  "src/js/app/core/**/*.filter.js",
+  "src/js/app/core/**/*.controller.js",
+
+  "src/js/app/components/**/*.module.js",
+  "src/js/app/components/**/*.service.js",
+  "src/js/app/components/**/*.directive.js",
+  "src/js/app/components/**/*.config.js",
+  "src/js/app/components/**/*.filter.js",
+  "src/js/app/components/**/*.controller.js",
+
+
+  "src/js/app/widgets/**/*.module.js",
+  "src/js/app/widgets/**/*.service.js",
+  "src/js/app/widgets/**/*.directive.js",
+  "src/js/app/widgets/**/*.config.js",
+  "src/js/app/widgets/**/*.filter.js",
+  "src/js/app/widgets/**/*.controller.js"
+
+]
+

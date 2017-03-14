@@ -1,0 +1,163 @@
+.ui-keyboard {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    background: #686868;
+    padding: 1.5vmax;
+    z-index: 10;
+    .ui-keyboard-preview-wrapper {
+        margin-bottom: 1vmax;
+        input:first-child {
+            width: 22vmax;
+            background: #fff;
+            border-radius: 0.25vmax;
+            color: #000;
+            font-size: 1vmax;
+            height: 2.9vmax;
+            padding: 0.8vmax;
+            border: none;
+            font-weight: 500;
+            padding-right: 4vmax;
+        }
+    }
+    .ui-keyboard-keyset {
+        margin: 0 -2px;
+        display: block;
+        width: 100%;
+        @include clearfix();
+        font-weight: 500;
+        .ui-keyboard-button {
+            float: left;
+            width: 33.33%;
+            padding: 2px;
+            border: none;
+            outline: none;
+            border-radius: 0;
+            box-shadow: none;
+            background: none;
+            span{
+                @include transition(all .3s ease);
+                cursor: pointer;
+            }
+            &.ui-state-hover {
+                span {
+                    background-color: #a7a7a7;
+                }
+            }
+            &[data-name="clear"] {
+                position: absolute;
+                right: 2.2vmax;
+                top: 2vmax;
+                float: none;
+                padding: 0;
+                opacity: 0.5;
+                display: inline-block;
+                color: #898989;
+                font-size: 1vmax;
+                font-weight: 400;
+                width: 1.9vmax;
+                height: 1.9vmax;
+                text-align: center;
+                line-height: 1.9vmax;
+                border: 1px solid #898989;
+                border-radius: 50%;
+                cursor: pointer;
+                @include transition(all .3s ease);
+                &:hover {
+                    color: lighten(#898989, 15%);
+                    border-color: lighten(#898989, 15%);
+                }
+                span {
+                    font-size: 0;
+                    background: none;
+                    line-height: 1.9vmax;
+                    &:after{
+                        font-size: 1vmax;
+                        content: "X";
+                        transform: scale(1, 0.8) translateX(-50%) translateY(-50%);
+                        -webkit-transform: scale(1, 0.8) translateX(-50%) translateY(-50%);
+                        -moz-transform: scale(1, 0.8) translateX(-50%) translateY(-50%);
+                        -ms-transform: scale(1, 0.8) translateX(-50%) translateY(-50%);
+                        -o-transform: scale(1, 0.8) translateX(-50%) translateY(-50%);
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        color: #898989;
+                        line-height: 0;
+                    }
+                }
+                &.ui-state-hover {
+                    span {
+                        background-color: transparent;
+                    }
+                }
+            }
+            &[data-name="cancel"] {
+                text-transform: uppercase;
+                line-height: 2.8vmax;
+                border: none;
+                box-shadow: none;
+                border-radius: 0.2vmax;
+                color: white;
+                font-size: 0.95vmax;
+                font-weight: 700;
+                background: #535353;
+                width: 37%;
+                margin-top: 0.8vmax;
+                margin-right: 3%;
+                cursor: pointer;
+                padding: 0;
+                overflow: hidden;
+                @include transition(all .3s ease);
+                &:hover{
+                    background: lighten(#535353, 5%);
+                }
+                span {
+                    font-size: inherit;
+                    color: inherit;
+                    background: inherit;
+                    display: inherit;
+                    line-height: inherit;
+                    @include transition(all 0s);
+                }
+            }
+            &[data-name="accept"] {
+                text-transform: uppercase;
+                line-height: 2.8vmax;
+                border: none;
+                box-shadow: none;
+                color: white;
+                font-size: 0.95vmax;
+                font-weight: 700;
+                background: #00a651;
+                width: 60%;
+                margin-top: 0.8vmax;
+                cursor: pointer;
+                padding: 0;
+                border-radius: 0.2vmax;
+                @include transition(all .3s ease);
+                overflow: hidden;
+                &:hover{
+                    background: lighten(#00a651, 5%);
+                }
+                span {
+                    font-size: inherit;
+                    color: inherit;
+                    background: inherit;
+                    display: inherit;
+                    line-height: inherit;
+                    @include transition(all 0s);
+                }
+            }
+            .ui-keyboard-text {
+                font-size: 1.5vmax;
+                color: #fff;
+                background: #939393;
+                display: block;
+                line-height: 4.1vmax;
+            }
+        }
+    }
+}

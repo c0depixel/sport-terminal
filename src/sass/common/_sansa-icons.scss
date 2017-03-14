@@ -1,0 +1,247 @@
+.f-sansa{
+    &.icon-toggle::before{
+        content: "1";
+    }
+    &.icon-file::before{
+        content: "5";
+    }
+    &.icon-star::before{
+        content: "4";
+    }
+
+    &.icon-star-full::before{
+        content: "z";
+    }
+
+    &.icon-user::before{
+        content: "6";
+    }
+
+    &.icon-home::before{
+        content: "2";
+    }
+
+    &.icon-dice::before{
+        content: "Y";
+    }
+
+    &.icon-bonus::before{
+        content: "U";
+    }
+
+    &.icon-personal::before{
+        content: "I";
+    }
+
+    &.icon-history::before{
+        content: "u";
+    }
+
+    &.icon-messages::before{
+        content: "i";
+    }
+
+    &.icon-security::before{
+        content: "O";
+    }
+
+    &.icon-sports::before{
+        content: "d";
+    }
+
+    &.icon-tennis::before, &.icon-table-tennis::before {
+        content: "D";
+    }
+
+    &.icon-handball::before {
+        content: "s";
+    }
+
+    &.icon-basketball::before {
+        content: "j";
+    }
+
+    &.icon-volleyball::before {
+        content: "h";
+    }
+
+    &.icon-hockey::before, &.icon-ice-hockey::before {
+        content: "K";
+    }
+
+    &.icon-baseball::before {
+        content: "k";
+    }
+
+    &.icon-american-football::before {
+        content: "G";
+    }
+
+    &.icon-football::before, &.icon-soccer::before {
+        content: "a";
+    }
+
+    &.icon-futsal::before, &.icon-beach-soccer::before {
+        content: "a";
+    }
+
+    &.icon-motor-sport::before, &.icon-motor-sports::before {
+        content: "G";
+    }
+
+    &.icon-rugby::before {
+        content: "A";
+    }
+
+    &.icon-snooker::before {
+        content: "S";
+    }
+
+    &.icon-waterpolo::before {
+        content: "f";
+    }
+
+    &.icon-bowls::before {
+        content: "S";
+    }
+
+    &.icon-beach-volley::before {
+        content: "h";
+    }
+
+    &.icon-a-z::before {
+        content: "X";
+    }
+
+    &.icon-live::before{
+        content: "e";
+    }
+
+    &.icon-most-played::before{
+        content: "R";
+    }
+
+    &.icon-top-leagues::before{
+        content: "r";
+    }
+
+    &.icon-last-minute-bets::before{
+        content: "T";
+    }
+
+    &.icon-todays-matches::before{
+        content: "t";
+    }
+
+    &.icon-calender::before{
+        content: "[";
+    }
+
+    &.icon-news::before{
+        content: "]";
+    }
+
+    &.icon-results::before{
+        content: ";";
+    }
+
+    &.icon-help::before{
+        content: "'";
+    }
+
+    &.icon-settings::before{
+        content: "9";
+    }
+
+    &.icon-general-info::before{
+        content: "7";
+    }
+
+    &.icon-search::after{
+        content:"8";
+    }
+
+    &.icon-arrow-back::after{
+        content:"3";
+    }
+
+    &.icon-password::after{
+        content:"0";
+    }
+
+    &.icon-world::after{
+        content:",";
+    }
+
+    &.icon-link::after{
+        content:".";
+    }
+
+    &.icon-top::after{
+        content:"/";
+    }
+
+    &.icon-activation-code::after{
+        content:"^";
+    }
+
+    &.icon-featured::after{
+        content:"E";
+    }
+
+    &.icon-tv::after{
+        content:"o";
+    }
+
+    &.icon-live-betting::after{
+        content:"e";
+    }
+
+    &.icon-tv-games::after{
+        content:"L";
+    }
+
+    &.icon-bingo::after{
+        content:"M";
+    }
+
+
+    &.icon-padlock::after{
+        content:"0";
+    }
+
+
+    &.icon-all-sports::after{
+        content:"X";
+    }
+
+    &.icon-close::after{
+        content:"}";
+    }
+    &.icon-top-arrow::after{
+        content:"Q";
+    }
+
+    &.icon-bottom-arrow::after{
+        content:"W";
+    }
+    &.icon-balance::after{
+        content:"b";
+    }
+    &.icon-message::after{
+        content:"C";
+    }
+    &.icon-inbox::after{
+        content:"V";
+    }
+    &.icon-send-m::after{
+        content:"B";
+    }
+    &.icon-arrow-right::after{
+        content:"q";
+    }
+    &.icon-all-sports::after{
+        content:"y";
+    }
+}
+
